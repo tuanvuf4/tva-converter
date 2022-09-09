@@ -1,0 +1,27 @@
+{
+  "name": "tva-converter",
+  "version": "1.0.0",
+  "description": "All you need convert number",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuanvuf4/tva-converter.git"
+  },
+  "author": "TuanVA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tuanvuf4/tva-converter/issues"
+  },
+  "homepage": "https://github.com/tuanvuf4/tva-converter#readme",
+  "devDependencies": {
+    "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "moment": "^2.29.4",
+    "reflect-metadata": "^0.1.13"
+  }
+}
