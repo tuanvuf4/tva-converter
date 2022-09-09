@@ -1,19 +1,22 @@
 {
   "compileOnSave": true,
   "compilerOptions": {
-    "importHelpers": true,
-    "outDir": "./dist",
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "node",
+    "baseUrl": "./src",
+    "declaration": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "importHelpers": true,
+    "lib": ["es2017", "dom"],
+    "module": "ES2015",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "skipLibCheck": true,
+    "strict": false,
+    "sourceMap": true,
     "target": "es5",
     "typeRoots": ["node_modules/@types"],
-    "types": ["reflect-metadata"],
-    "module": "commonjs",
-    "lib": ["es2017", "dom"],
-    "skipLibCheck": true,
-    "baseUrl": "./src"
-  }
+    "types": ["reflect-metadata"]
+  },
+  "include": ["src", "test"],
+  "exclude": ["node_modules", "dist"]
 }

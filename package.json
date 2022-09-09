@@ -2,10 +2,12 @@
   "name": "tva-converter",
   "version": "1.0.2",
   "description": "All you need convert number",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "private": "true",
+  "types": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc -d"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
