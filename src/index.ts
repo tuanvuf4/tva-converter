@@ -11,3 +11,5 @@ namespace TVAConverter {
     console.log('on Create ')
   }
 }
+
+TVAConverter.create()
