@@ -12,4 +12,3 @@ var TVAConverter;
     TVAConverter.create = create;
 })(TVAConverter || (TVAConverter = {}));
 TVAConverter.create();
-//# sourceMappingURL=index.js.map
