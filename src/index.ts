@@ -5,3 +5,9 @@ export const powerBy = (num: number, pow: number) => {
   throw new Error("Invalid input data!");
   
 }
+
+namespace TVAConverter {
+  export function create() {
+    console.log('on Create ')
+  }
+}
