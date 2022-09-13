@@ -13,3 +13,19 @@ namespace TVAConverter {
 }
 
 TVAConverter.create()
+
+export class Animal {
+  feet: number
+
+  constructor() {
+
+  }
+
+  run() {
+    console.log('animal run ')
+  }
+
+  jump() {
+    console.log('animal jump');
+  }
+}

@@ -12,4 +12,15 @@ var TVAConverter;
     TVAConverter.create = create;
 })(TVAConverter || (TVAConverter = {}));
 TVAConverter.create();
-//# sourceMappingURL=index.js.map
+var Animal = /** @class */ (function () {
+    function Animal() {
+    }
+    Animal.prototype.run = function () {
+        console.log('animal run ');
+    };
+    Animal.prototype.jump = function () {
+        console.log('animal jump');
+    };
+    return Animal;
+}());
+export { Animal };
