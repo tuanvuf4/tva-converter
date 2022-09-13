@@ -1,2 +1,0 @@
-export var startupDecorator = function () {
-};

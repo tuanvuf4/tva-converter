@@ -1,0 +1,1 @@
+(()=>{"use strict";var n;!function(n){n.create=function(){console.log("on Create ")}}(n||(n={})),n.create(),function(){function n(){}n.prototype.run=function(){console.log("animal run ")},n.prototype.jump=function(){console.log("animal jump")}}()})();

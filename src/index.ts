@@ -3,7 +3,6 @@ export const powerBy = (num: number, pow: number) => {
     return Math.pow(num, pow)
   }
   throw new Error("Invalid input data!");
-  
 }
 
 export namespace TVAConverter {
@@ -18,7 +17,7 @@ export class Animal {
   feet: number
 
   constructor() {
-
+    
   }
 
   run() {
