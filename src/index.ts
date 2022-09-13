@@ -6,7 +6,7 @@ export const powerBy = (num: number, pow: number) => {
   
 }
 
-namespace TVAConverter {
+export namespace TVAConverter {
   export function create() {
     console.log('on Create ')
   }

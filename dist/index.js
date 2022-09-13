@@ -4,7 +4,7 @@ export var powerBy = function (num, pow) {
     }
     throw new Error("Invalid input data!");
 };
-var TVAConverter;
+export var TVAConverter;
 (function (TVAConverter) {
     function create() {
         console.log('on Create ');
