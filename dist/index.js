@@ -4,7 +4,7 @@ export var powerBy = function (num, pow) {
     }
     throw new Error("Invalid input data!");
 };
-var TVAConverter;
+export var TVAConverter;
 (function (TVAConverter) {
     function create() {
         console.log('on Create ');
@@ -12,3 +12,15 @@ var TVAConverter;
     TVAConverter.create = create;
 })(TVAConverter || (TVAConverter = {}));
 TVAConverter.create();
+var Animal = /** @class */ (function () {
+    function Animal() {
+    }
+    Animal.prototype.run = function () {
+        console.log('animal run ');
+    };
+    Animal.prototype.jump = function () {
+        console.log('animal jump');
+    };
+    return Animal;
+}());
+export { Animal };

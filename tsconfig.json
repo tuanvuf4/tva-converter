@@ -10,10 +10,10 @@
     "module": "ES2015",
     "moduleResolution": "node",
     "outDir": "./dist",
-    "skipLibCheck": false,
-    "strict": true,
+    "skipLibCheck": true,
+    "strict": false,
     "sourceMap": false,
-    "target": "ES5",
+    "target": "es5",
     "typeRoots": ["node_modules/@types"],
     "types": ["reflect-metadata"]
   },
