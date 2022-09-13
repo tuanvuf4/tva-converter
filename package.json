@@ -1,6 +1,6 @@
 {
   "name": "tva-converter",
-  "version": "1.0.17",
+  "version": "1.0.20",
   "description": "All you need convert number",
   "main": "./dist/index.js",
   "types": "",
@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "tsc",
     "patch": "npm version patch",
-    "publish": "npm publish"
+    "publish": "npm publish",
+    "build": "npm version patch && npm publish"
   },
   "repository": {
     "type": "git",
