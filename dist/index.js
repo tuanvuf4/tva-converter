@@ -24,3 +24,4 @@ var Animal = /** @class */ (function () {
     return Animal;
 }());
 export { Animal };
+export { startupDecorator } from './decorators/startup';

@@ -8,3 +8,4 @@ export declare class Animal {
     run(): void;
     jump(): void;
 }
+export { startupDecorator } from './decorators/startup';

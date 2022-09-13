@@ -29,3 +29,5 @@ export class Animal {
     console.log('animal jump');
   }
 }
+
+export { startupDecorator } from './decorators/startup'
