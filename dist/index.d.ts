@@ -1,3 +1,4 @@
+import { People } from './decorators/startup';
 export declare namespace TVAConverter {
     const create: () => void;
     const powerBy: (num: number, pow: number) => number;
@@ -14,4 +15,4 @@ export declare enum EJob {
     DEVELOPER = 1,
     LAWYER = 2
 }
-export * from './decorators/startup';
+export declare const p1: People;

@@ -1,10 +1,10 @@
-import { startupDecorator } from './decorators/startup';
+import { People, startupDecorator } from './decorators/startup';
 
 export namespace TVAConverter {
   export const create = () => {
     console.log('on Create ');
     startupDecorator();
-  }
+  };
 
   export const powerBy = (num: number, pow: number) => {
     if (typeof num === 'number' && typeof pow === 'number') {
@@ -15,24 +15,23 @@ export namespace TVAConverter {
 
   export class Animal {
     feet: number;
-  
+
     constructor() {}
-  
+
     run() {
       console.log('animal run ');
     }
-  
+
     jump() {
       console.log('animal jump');
     }
   }
 }
 
-export const foo = 'foo'
+export const foo = 'foo';
 export enum EJob {
   TEACHER,
   DEVELOPER,
-  LAWYER
+  LAWYER,
 }
-
-export * from './decorators/startup';
+export const p1 = new People()

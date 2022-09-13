@@ -9,11 +9,11 @@
     "compile": "tsc",
     "patch": "npm version patch",
     "publish": "npm publish",
-    "build": "tsc && webpack --mode=production --node-env=production",
-    "build:dev": "tsc && webpack --mode=development",
-    "build:prod": "tsc && webpack --mode=production --node-env=production",
-    "watch": "tsc && webpack --watch",
-    "serve": "tsc && webpack serve"
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch",
+    "serve": "webpack serve"
   },
   "repository": {
     "type": "git",
