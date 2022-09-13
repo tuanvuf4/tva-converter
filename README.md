@@ -1,5 +1,15 @@
-# tva-converter
-## convert number into your format
+# 🚀 Welcome to your new awesome project!
 
-# Installation
-npm install 'tva-converter'
+This project has been created using **webpack-cli**, you can now run
+
+```
+npm run build
+```
+
+or
+
+```
+yarn build
+```
+
+to bundle your application
