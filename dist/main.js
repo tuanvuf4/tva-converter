@@ -1,1 +1,1 @@
-(()=>{"use strict";var n;!function(n){n.create=function(){console.log("on Create ")}}(n||(n={})),n.create(),function(){function n(){}n.prototype.run=function(){console.log("animal run ")},n.prototype.jump=function(){console.log("animal jump")}}()})();
+(()=>{"use strict";var o;!function(o){o.create=function(){console.log("on Create "),console.log("startupDecorator")}}(o||(o={})),o.create(),function(){function o(){}o.prototype.run=function(){console.log("animal run ")},o.prototype.jump=function(){console.log("animal jump")}}()})();

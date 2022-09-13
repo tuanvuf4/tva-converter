@@ -1,27 +1,28 @@
+import { startupDecorator } from './decorators/startup';
+
 export const powerBy = (num: number, pow: number) => {
-  if (typeof(num) === 'number' && typeof(pow) === 'number') {
-    return Math.pow(num, pow)
+  if (typeof num === 'number' && typeof pow === 'number') {
+    return Math.pow(num, pow);
   }
-  throw new Error("Invalid input data!");
-}
+  throw new Error('Invalid input data!');
+};
 
 export namespace TVAConverter {
   export function create() {
-    console.log('on Create ')
+    console.log('on Create ');
+    startupDecorator();
   }
 }
 
-TVAConverter.create()
+TVAConverter.create();
 
 export class Animal {
-  feet: number
+  feet: number;
 
-  constructor() {
-    
-  }
+  constructor() {}
 
   run() {
-    console.log('animal run ')
+    console.log('animal run ');
   }
 
   jump() {
@@ -29,4 +30,4 @@ export class Animal {
   }
 }
 
-export { startupDecorator } from './decorators/startup'
+export * from './decorators/startup';
