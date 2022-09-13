@@ -1,6 +1,6 @@
 {
   "name": "tva-converter",
-  "version": "1.0.22",
+  "version": "1.0.23",
   "description": "All you need convert number",
   "main": "./dist/index.js",
   "types": "",
