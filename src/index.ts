@@ -6,10 +6,26 @@ export const powerBy = (num: number, pow: number) => {
   
 }
 
-namespace TVAConverter {
+export namespace TVAConverter {
   export function create() {
     console.log('on Create ')
   }
 }
 
 TVAConverter.create()
+
+export class Animal {
+  feet: number
+
+  constructor() {
+
+  }
+
+  run() {
+    console.log('animal run ')
+  }
+
+  jump() {
+    console.log('animal jump');
+  }
+}

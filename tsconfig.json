@@ -12,7 +12,7 @@
     "outDir": "./dist",
     "skipLibCheck": true,
     "strict": false,
-    "sourceMap": true,
+    "sourceMap": false,
     "target": "es5",
     "typeRoots": ["node_modules/@types"],
     "types": ["reflect-metadata"]
