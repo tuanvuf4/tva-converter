@@ -37,3 +37,5 @@ export enum EJob {
 export const p1 = new People(12, 40)
 console.log('p1.height ', p1.height)
 console.log('p1.weight ', p1.weight)
+
+export * from './decorators/startup'

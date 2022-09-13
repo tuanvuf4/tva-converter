@@ -16,3 +16,4 @@ export declare enum EJob {
     LAWYER = 2
 }
 export declare const p1: People;
+export * from './decorators/startup';
