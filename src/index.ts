@@ -3,7 +3,6 @@ import { People, startupDecorator } from './decorators/startup';
 export namespace TVAConverter {
   export const create = () => {
     console.log('on Create ');
-    startupDecorator();
   };
 
   export const powerBy = (num: number, pow: number) => {
@@ -35,7 +34,5 @@ export enum EJob {
   LAWYER,
 }
 export const p1 = new People(12, 40)
-console.log('p1.height ', p1.height)
-console.log('p1.weight ', p1.weight)
 
 export * from './decorators/startup'

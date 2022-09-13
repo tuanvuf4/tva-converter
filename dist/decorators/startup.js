@@ -8,7 +8,6 @@ var People = /** @class */ (function () {
     }
     Object.defineProperty(People.prototype, "height", {
         get: function () {
-            console.log('this._height ', this._height);
             return this._height;
         },
         set: function (h) {
@@ -31,11 +30,12 @@ var People = /** @class */ (function () {
         console.log('people work!');
     };
     People.prototype.sayHeight = function () {
-        console.log('People height: ' + this.height);
+        console.log('People say height: ' + this.height);
     };
     People.prototype.sayWeight = function () {
-        console.log('People weight: ' + this.weight);
+        console.log('People say weight: ' + this.weight);
     };
     return People;
 }());
 export { People };
+//# sourceMappingURL=startup.js.map

@@ -7,7 +7,6 @@ export class People {
   private _weight: number;
 
   get height() {
-    console.log('this._height ', this._height);
     return this._height;
   }
 
@@ -33,10 +32,10 @@ export class People {
   }
 
   sayHeight() {
-    console.log('People height: ' + this.height);
+    console.log('People say height: ' + this.height);
   }
 
   sayWeight() {
-    console.log('People weight: ' + this.weight);
+    console.log('People say weight: ' + this.weight);
   }
 }

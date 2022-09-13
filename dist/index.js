@@ -1,1 +1,38 @@
-(()=>{"use strict";var t,e,o=function(){function t(t,e){this._height=t,this._weight=e}return Object.defineProperty(t.prototype,"height",{get:function(){return console.log("this._height ",this._height),this._height},set:function(t){this._height=t},enumerable:!1,configurable:!0}),Object.defineProperty(t.prototype,"weight",{get:function(){return this._weight},set:function(t){this._weight=t},enumerable:!1,configurable:!0}),t.prototype.work=function(){console.log("people work!")},t.prototype.sayHeight=function(){console.log("People height: "+this.height)},t.prototype.sayWeight=function(){console.log("People weight: "+this.weight)},t}();!function(t){t.create=function(){console.log("on Create "),console.log("startupDecorator")},t.powerBy=function(t,e){if("number"==typeof t&&"number"==typeof e)return Math.pow(t,e);throw new Error("Invalid input data!")};var e=function(){function t(){}return t.prototype.run=function(){console.log("animal run ")},t.prototype.jump=function(){console.log("animal jump")},t}();t.Animal=e}(t||(t={})),function(t){t[t.TEACHER=0]="TEACHER",t[t.DEVELOPER=1]="DEVELOPER",t[t.LAWYER=2]="LAWYER"}(e||(e={}));var n=new o(12,40);console.log("p1.height ",n.height),console.log("p1.weight ",n.weight)})();
+import { People, startupDecorator } from './decorators/startup';
+export var TVAConverter;
+(function (TVAConverter) {
+    TVAConverter.create = function () {
+        console.log('on Create ');
+        startupDecorator();
+    };
+    TVAConverter.powerBy = function (num, pow) {
+        if (typeof num === 'number' && typeof pow === 'number') {
+            return Math.pow(num, pow);
+        }
+        throw new Error('Invalid input data!');
+    };
+    var Animal = /** @class */ (function () {
+        function Animal() {
+        }
+        Animal.prototype.run = function () {
+            console.log('animal run ');
+        };
+        Animal.prototype.jump = function () {
+            console.log('animal jump');
+        };
+        return Animal;
+    }());
+    TVAConverter.Animal = Animal;
+})(TVAConverter || (TVAConverter = {}));
+export var foo = 'foo';
+export var EJob;
+(function (EJob) {
+    EJob[EJob["TEACHER"] = 0] = "TEACHER";
+    EJob[EJob["DEVELOPER"] = 1] = "DEVELOPER";
+    EJob[EJob["LAWYER"] = 2] = "LAWYER";
+})(EJob || (EJob = {}));
+export var p1 = new People(12, 40);
+console.log('p1.height ', p1.height);
+console.log('p1.weight ', p1.weight);
+export * from './decorators/startup';
+//# sourceMappingURL=index.js.map

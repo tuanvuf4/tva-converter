@@ -21,6 +21,7 @@ const config = {
   plugins: [
     new HtmlWebpackPlugin({
       template: 'index.html',
+      minify: true
     }),
 
     new MiniCssExtractPlugin(),
@@ -32,7 +33,27 @@ const config = {
     rules: [
       {
         test: /\.(ts|tsx)$/i,
-        loader: 'ts-loader',
+        use: [
+          {
+            loader: "source-map-loader",
+            options: {
+              filterSourceMappingUrl: (url, resourcePath) => {
+                if (/broker-source-map-url\.js$/i.test(url)) {
+                  return false;
+                }
+
+                if (/keep-source-mapping-url\.js$/i.test(resourcePath)) {
+                  return "skip";
+                }
+
+                return true;
+              },
+            },
+          },
+          {
+            loader: 'ts-loader',
+          }
+        ],
         exclude: ['/node_modules/'],
       },
       {
@@ -47,7 +68,6 @@ const config = {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
         type: 'asset',
       },
-
       // Add your rules for custom modules here
       // Learn more about loaders from https://webpack.js.org/loaders/
     ],
