@@ -7,7 +7,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "tsc",
-    "publish": "npm version patch && npm publish"
+    "patch": "npm version patch",
+    "publish": "npm publish",
+    "build": "npm version patch && npm publish"
   },
   "repository": {
     "type": "git",
