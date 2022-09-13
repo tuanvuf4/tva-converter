@@ -13,7 +13,7 @@
     "skipLibCheck": true,
     "strict": false,
     "sourceMap": false,
-    "target": "es5",
+    "target": "ES5",
     "allowJs": true
   },
   "include": ["src", "test"],
