@@ -1,1 +1,3 @@
-(()=>{"use strict";!function(){function t(){}t.prototype.getCurrentDate=function(){return(new Date).getTime()},t.prototype.getCurrentTimeZone=function(){return e=(t=(new Date).getTimezoneOffset())>0?"-":"+",n=Math.abs(t)/60,"UTC".concat(e).concat(n);var t,e,n},t.prototype.getSeconds=function(){return(new Date).getSeconds()}}()})();
+export * from './app/number';
+export * from './app/date';
+//# sourceMappingURL=index.js.map
