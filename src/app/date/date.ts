@@ -1,11 +1,15 @@
 import { getLocalTimeZone } from '../../core/functions';
 
 export class TVADate {
-  static getCurrentDate() {
+  getCurrentDate() {
     return new Date().getTime();
   }
 
-  static getCurrentTimeZone() {
+  getCurrentTimeZone() {
     return getLocalTimeZone();
+  }
+
+  getSeconds() {
+    return new Date().getSeconds()
   }
 }
