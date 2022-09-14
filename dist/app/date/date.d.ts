@@ -1,4 +1,4 @@
-export declare namespace TVADate {
-    const getCurrentDate: () => number;
-    const getCurrentTimeZone: () => string;
+export declare class TVADate {
+    static getCurrentDate(): number;
+    static getCurrentTimeZone(): string;
 }
