@@ -1,5 +1,5 @@
 export declare class TVADate {
-    getCurrentDate(): number;
-    getCurrentTimeZone(): string;
-    getSeconds(): number;
+    static getCurrentDate(): number;
+    static getCurrentTimeZone(): string;
+    static getSeconds(): number;
 }

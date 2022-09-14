@@ -2,13 +2,13 @@ import { getLocalTimeZone } from '../../core/functions';
 var TVADate = /** @class */ (function () {
     function TVADate() {
     }
-    TVADate.prototype.getCurrentDate = function () {
+    TVADate.getCurrentDate = function () {
         return new Date().getTime();
     };
-    TVADate.prototype.getCurrentTimeZone = function () {
+    TVADate.getCurrentTimeZone = function () {
         return getLocalTimeZone();
     };
-    TVADate.prototype.getSeconds = function () {
+    TVADate.getSeconds = function () {
         return new Date().getSeconds();
     };
     return TVADate;
