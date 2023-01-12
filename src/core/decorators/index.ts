@@ -39,3 +39,46 @@ export class People {
     console.log('People say weight: ' + this.weight);
   }
 }
+
+// @classDecorator
+// class Person {
+//   @propertyDecorator
+//   public name: string;
+// 
+//   @accessorDecorator
+//   get fullName() {
+//     // ...
+//   }
+// 
+//   @methodDecorator
+//   printName(@parameterDecorator prefix: string) {
+//     // ...
+//   }
+// }
+
+@simpleDecorator
+@sealed
+export class Person {}
+
+function sealed(target: Function) {
+  // Object.seal(target);
+  // Object.seal(target.prototype);
+}
+
+const p1 = new Person()
+console.log('p1 ', p1)
+// p1
+
+function simpleDecorator(target: any) {
+  console.log('Hello from Decorator');
+ 
+  Object.defineProperty(target.prototype, 'value1', {
+    value: 100,
+    writable: false
+  });
+ 
+  Object.defineProperty(target.prototype, 'value2', {
+    value: 200,
+    writable: false
+  });
+}

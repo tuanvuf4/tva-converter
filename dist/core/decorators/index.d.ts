@@ -11,3 +11,5 @@ export declare class People {
     sayHeight(): void;
     sayWeight(): void;
 }
+export declare class Person {
+}
